@@ -44,3 +44,9 @@ def solution(start, finish):
 
 def solution(ls,ts):
     return (ts-ls)//3 + (ts-ls)%3
+
+def solution(start, finish):
+    total_steps = finish - start
+    three_jumps = total_steps // 3
+    one_jumps = total_steps % 3
+    return three_jumps + one_jumps
